@@ -23,9 +23,8 @@ import os
 
 '''
 
-
+# 创建13位时间戳
 def getTimeStamp():
-    # 创建13位时间戳
     now = time.time()
     now = (int(now * 1000))
     strnow = str(now)
@@ -54,7 +53,7 @@ def main(username, password):
     session = requests.Session()
     # 发送post请求
     try:
-        r = session.post(loginUrl, json=loginData, verify=False)
+        r = session.post(loginUrl, json=loginData, headers=loginHeaders, verify=False)
         # 打印cookie
         # print("r: ")
         # print(r.headers)
@@ -247,7 +246,7 @@ def main(username, password):
     with open('duibi_info.json', 'w') as f:
         f.write(json_str)
 
-    signRequest = requests.post(signUrl, json = signData, headers = signHeaders)
+    signRequest = session.post(signUrl, json = signData, headers = signHeaders)
     print("signRequest: ")
     print(signRequest.text)
 
@@ -262,7 +261,7 @@ if __name__ == "__main__":
     # 忽略TLS Warnings警告
     urllib3.disable_warnings()
 
-    username = "填入学号"
+    username = "201700800609"
     password = "whsdu@" + username
     print("开始为学号 " + username + "的同学开始打卡")
     main(username, password)
