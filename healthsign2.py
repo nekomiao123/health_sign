@@ -261,7 +261,7 @@ if __name__ == "__main__":
     # 忽略TLS Warnings警告
     urllib3.disable_warnings()
 
-    username = "201700800609"
+    username = "填入学号"
     password = "whsdu@" + username
     print("开始为学号 " + username + "的同学开始打卡")
     main(username, password)
