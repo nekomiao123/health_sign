@@ -2,7 +2,6 @@ import requests
 import time
 import urllib3
 import json
-import gzip
 import os
 import datetime
 import yaml
