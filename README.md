@@ -71,6 +71,12 @@ pip install requests
 ### github action
 文件里面那个healthsign3_ac.py就是专门用在github action的文件
 
+对于secrets
+
+- keys是CONFIG 
+
+- value是文件里面healthconfigexample.yml的所有代码（简单来说就是我的value是一个yml文件，配置都写在文件的注释里面了）
+
 # 未完成情况
 
 多多测试代码是否完善

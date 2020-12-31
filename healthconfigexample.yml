@@ -1,0 +1,9 @@
+name: Nekokiku's Scripts for Health Sign
+version: v3.1
+
+# 脚本配置信息，根据下面的学号填就好了，想增加的话就复制粘贴就行
+jobs:
+  studentID:
+    - "填入第一个学号"
+    - "填入第二个学号"
+    - "填入第三个学号"
