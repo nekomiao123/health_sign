@@ -68,8 +68,9 @@ pip install requests
 
 ![](https://cdn.jsdelivr.net/gh/nekomiao123/pic/img/image-20201228185614331.png)
 
-
+### github action
+文件里面那个healthsign3_ac.py就是专门用在github action的文件
 
 # 未完成情况
 
-部署在github action上
+多多测试代码是否完善
